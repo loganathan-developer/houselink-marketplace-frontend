@@ -1,3 +1,6 @@
+import { redirect } from "next/navigation";
+import { routes } from "@/lib/routes";
+
 export default function BuyerAddressesPage() {
-  return <main className="p-6">Buyer address module</main>;
+  redirect(routes.buyer.addresses);
 }
